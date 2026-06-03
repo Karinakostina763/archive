@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГКУ АО "Государственный архив Астраханской области"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="images/church-header.jpg" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="images/logo.png" alt="Астраханская церковь" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-bold">ГКУ АО "Государственный архив</span>
+                    <span>Астраханской области"</span>
+                </div>
+            </div>
+            <div class="contact-info-header">
+                <p>📞 +7 (8512) 66-62-40</p>
+                <p>✉ astrahanarhive@astrobl.ru</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" data-page="home">Главная</a></li>
+                <li><a href="#" data-page="about">Об архиве</a></li>
+                <li><a href="#" data-page="services">Услуги</a></li>
+                <li><a href="#" data-page="documents">Документы</a></li>
+                <li><a href="#" data-page="collections">Фонды</a></li>
+                <li><a href="#" data-page="researchers">Исследователям</a></li>
+                <li><a href="#" data-page="news">Новости</a></li>
+                <li><a href="#" data-page="contacts">Контакты</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Главная страница -->
+        <div id="page-home" class="page active">
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Главный архив Астраханской области</h2>
+                    <p>Более 1,5 миллионов дел — вся история региона в одном месте</p>
+                    <button class="btn-primary" onclick="navigateTo('services')">Перейти к услугам</button>
+                </div>
+            </section>
+
+            <section class="directions">
+                <h2>Основные направления деятельности</h2>
+                <div class="directions-grid">
+                    <div class="direction-card">
+                        <div class="direction-icon">📁</div>
+                        <h3>Хранение документов</h3>
+                        <p>Обеспечение сохранности архивных документов и фондов</p>
+                    </div>
+                    <div class="direction-card">
+                        <div class="direction-icon">📄</div>
+                        <h3>Предоставление информации</h3>
+                        <p>Выдача архивных справок, копий и выписок</p>
+                    </div>
+                    <div class="direction-card">
+                        <div class="direction-icon">🔍</div>
+                        <h3>Использование документов</h3>
+                        <p>Организация работы читального зала</p>
+                    </div>
+                    <div class="direction-card">
+                        <div class="direction-icon">🏛</div>
+                        <h3>Популяризация архивного дела</h3>
+                        <p>Выставки, публикации, экскурсии</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">1 500 000+</span>
+                    <span class="stat-label">единиц хранения</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1 200+</span>
+                    <span class="stat-label">фондов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">105</span>
+                    <span class="stat-label">лет истории</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5 000+</span>
+                    <span class="stat-label">посетителей в год</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Об архиве -->
+        <div id="page-about" class="page">
+            <section class="page-header">
+                <h2>Об архиве</h2>
+            </section>
+            <div class="content-container">
+                <div class="about-section">
+                    <h3>История архива</h3>
+                    <p>Государственный архив Астраханской области был основан в 1918 году. Сегодня это — одно из крупнейших хранилищ документов на Юге России. В фондах архива содержатся уникальные документы, начиная с XVIII века и до наших дней.</p>
+                    
+                    <h3>Основные задачи</h3>
+                    <ul>
+                        <li>Обеспечение сохранности архивных документов</li>
+                        <li>Предоставление архивной информации гражданам и организациям</li>
+                        <li>Организация использования документов в научных и практических целях</li>
+                        <li>Информирование о деятельности архива</li>
+                        <li>Внедрение современных информационных технологий</li>
+                    </ul>
+
+                    <h3>Структура архива</h3>
+                    <ul>
+                        <li>Отдел комплектования и делопроизводства</li>
+                        <li>Отдел хранения и государственного учета</li>
+                        <li>Отдел использования и публикации документов</li>
+                        <li>Научно-справочная библиотека</li>
+                        <li>Лаборатория микрофильмирования и реставрации</li>
+                    </ul>
+
+                    <h3>Руководство</h3>
+                    <div class="leadership">
+                        <p><strong>Директор:</strong> Иванова Елена Петровна</p>
+                        <p><strong>Заместитель директора:</strong> Петров Сергей Алексеевич</p>
+                        <p><strong>Главный хранитель фондов:</strong> Сидорова Мария Ивановна</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Услуги -->
+        <div id="page-services" class="page">
+            <section class="page-header">
+                <h2>Услуги</h2>
+            </section>
+            <div class="content-container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">📑</div>
+                        <h3>Социально-правовые запросы</h3>
+                        <p>Выдача архивных справок, подтверждающих стаж работы, заработную плату, награждения</p>
+                        <button class="btn-service" onclick="openModal('social')">Подробнее</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌳</div>
+                        <h3>Генеалогические запросы</h3>
+                        <p>Поиск сведений о родственниках, составление родословной</p>
+                        <button class="btn-service" onclick="openModal('genealogy')">Подробнее</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📖</div>
+                        <h3>Тематические запросы</h3>
+                        <p>Подбор информации по истории организаций, событий, личностей</p>
+                        <button class="btn-service" onclick="openModal('thematic')">Подробнее</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🖨</div>
+                        <h3>Ксерокопирование и сканирование</h3>
+                        <p>Изготовление копий документов в соответствии с законодательством</p>
+                        <button class="btn-service" onclick="openModal('copy')">Подробнее</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">👥</div>
+                        <h3>Работа в читальном зале</h3>
+                        <p>Доступ к архивным документам для исследователей</p>
+                        <button class="btn-service" onclick="openModal('reading')">Подробнее</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📹</div>
+                        <h3>Экскурсии и консультации</h3>
+                        <p>Организация экскурсий, методическая помощь</p>
+                        <button class="btn-service" onclick="openModal('excursion')">Подробнее</button>
+                    </div>
+                </div>
+                <div class="service-request">
+                    <h3>Оставить запрос на услугу</h3>
+                    <form id="requestForm" class="request-form">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Телефон">
+                        <select required>
+                            <option value="">Выберите тип запроса</option>
+                            <option>Социально-правовой</option>
+                            <option>Генеалогический</option>
+                            <option>Тематический</option>
+                        </select>
+                        <textarea placeholder="Опишите ваш запрос" rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Документы -->
+        <div id="page-documents" class="page">
+            <section class="page-header">
+                <h2>Документы и публикации</h2>
+            </section>
+            <div class="content-container">
+                <div class="search-box">
+                    <input type="text" id="docSearch" placeholder="Поиск по документам..." class="search-input">
+                    <button onclick="searchDocuments()" class="btn-primary">Искать</button>
+                </div>
+                
+                <div class="doc-categories">
+                    <div class="category" data-category="all">Все документы</div>
+                    <div class="category" data-category="decrees">Указы и постановления</div>
+                    <div class="category" data-category="metrics">Метрические книги</div>
+                    <div class="category" data-category="photos">Фотодокументы</div>
+                </div>
+                
+                <div class="documents-list" id="documentsList">
+                    <div class="doc-item" data-category="decrees">
+                        <h4>Указ о преобразовании Астраханской губернии</h4>
+                        <p>1919 год, 2 страницы, PDF</p>
+                    </div>
+                    <div class="doc-item" data-category="metrics">
+                        <h4>Метрическая книга Покровского собора</h4>
+                        <p>1890-1895 гг., 120 страниц, JPG</p>
+                    </div>
+                    <div class="doc-item" data-category="photos">
+                        <h4>Фото: Астраханский кремль, 1910 г.</h4>
+                        <p>1 лист, 300 dpi, JPEG</p>
+                    </div>
+                    <div class="doc-item" data-category="decrees">
+                        <h4>Постановление об организации архивного дела</h4>
+                        <p>1918 год, 5 страниц, PDF</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Фонды -->
+        <div id="page-collections" class="page">
+            <section class="page-header">
+                <h2>Архивные фонды</h2>
+            </section>
+            <div class="content-container">
+                <div class="funds-info">
+                    <p>Всего в архиве насчитывается <strong>более 1 200 фондов</strong>, содержащих уникальные документы по истории Астраханского края.</p>
+                </div>
+                <div class="funds-table-container">
+                    <table class="funds-table">
+                        <thead>
+                            <tr><th>Код</th><th>Наименование фонда</th><th>Количество единиц</th><th>Хронологические рамки</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Астраханская городская Дума</td><td>12 458</td><td>1785-1917 гг.</td></tr>
+                            <tr><td>2</td><td>Астраханская городская управа</td><td>8 742</td><td>1870-1917 гг.</td></tr>
+                            <tr><td>3</td><td>Астраханский губернский исполнительный комитет</td><td>22 309</td><td>1917-1928 гг.</td></tr>
+                            <tr><td>4</td><td>Астраханский областной совет депутатов трудящихся</td><td>15 126</td><td>1943-1991 гг.</td></tr>
+                            <tr><td>5</td><td>Личные фонды деятелей культуры и науки</td><td>5 634</td><td>XIX-XX вв.</td></tr>
+                            <tr><td>6</td><td>Коллекция фотодокументов</td><td>3 891</td><td>1860-2000 гг.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="funds-search">
+                    <h3>Поиск по фондам</h3>
+                    <input type="text" id="fundSearch" placeholder="Введите название фонда, ключевые слова...">
+                    <button onclick="searchFunds()" class="btn-primary">Найти фонд</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Исследователям -->
+        <div id="page-researchers" class="page">
+            <section class="page-header">
+                <h2>Исследователям</h2>
+            </section>
+            <div class="content-container">
+                <div class="researcher-info">
+                    <div class="info-card">
+                        <h3>Порядок работы в читальном зале</h3>
+                        <p>Для работы в читальном зале необходимо:</p>
+                        <ul>
+                            <li>Заполнить заявление-анкету</li>
+                            <li>Предъявить документ, удостоверяющий личность</li>
+                            <li>Для студентов и аспирантов — направление от учебного заведения</li>
+                            <li>Для иностранных граждан — разрешительные документы</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Правила пользования документами</h3>
+                        <ul>
+                            <li>С документами работают только в читальном зале</li>
+                            <li>Запрещено выносить документы за пределы зала</li>
+                            <li>Использовать разрешено только карандаш и бумагу</li>
+                            <li>Фотографировать можно только с разрешения сотрудника</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Образцы заявлений</h3>
+                        <p>Образцы документов можно скачать по ссылкам ниже:</p>
+                        <button class="btn-service">Скачать заявление (DOCX)</button>
+                        <button class="btn-service">Скачать анкету (PDF)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Новости -->
+        <div id="page-news" class="page">
+            <section class="page-header">
+                <h2>Новости архива</h2>
+            </section>
+            <div class="content-container">
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-date">15.05.2024</div>
+                        <h3>О режиме работы архива в праздничные дни</h3>
+                        <p>Архив будет работать по сокращенному графику в связи с празднованием Дня Победы. 9 мая — выходной день.</p>
+                        <a href="#" class="news-link" onclick="showNewsDetail(this); return false;">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">07.05.2024</div>
+                        <h3>Новые поступления в архивные фонды</h3>
+                        <p>В архив поступили документы от Администрации г. Астрахани за 2020-2023 годы. Общий объем — 350 дел.</p>
+                        <a href="#" class="news-link" onclick="showNewsDetail(this); return false;">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">01.05.2024</div>
+                        <h3>Выставка «Астрахань в годы войны»</h3>
+                        <p>В фойе архива открылась новая выставка, посвященная 79-летию Победы в Великой Отечественной войне.</p>
+                        <a href="#" class="news-link" onclick="showNewsDetail(this); return false;">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">20.04.2024</div>
+                        <h3>День открытых дверей в архиве</h3>
+                        <p>Приглашаем всех желающих на экскурсию по архиву. В программе: знакомство с хранилищем, показ уникальных документов.</p>
+                        <a href="#" class="news-link" onclick="showNewsDetail(this); return false;">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">10.04.2024</div>
+                        <h3>Цифровизация архивных документов</h3>
+                        <p>Оцифровано более 50 000 листов дел фонда «Астраханская городская управа». Документы доступны в читальном зале.</p>
+                        <a href="#" class="news-link" onclick="showNewsDetail(this); return false;">Подробнее →</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">25.03.2024</div>
+                        <h3>Научная конференция «Архивное дело Поволжья»</h3>
+                        <p>Приглашаем принять участие в ежегодной конференции. Срок подачи заявок — до 20 мая.</p>
+                        <a href="#" class="news-link" onclick="showNewsDetail(this); return false;">Подробнее →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Контакты -->
+        <div id="page-contacts" class="page">
+            <section class="page-header">
+                <h2>Контакты</h2>
+            </section>
+            <div class="content-container">
+                <div class="contacts-wrapper">
+                    <div class="contacts-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Адрес</h3>
+                                <p>414000, г. Астрахань,<br>ул. Академика Королёва, 39А</p>
+                                <p class="note">*(в соответствии с вашим заданием)</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Телефоны</h3>
+                                <p>+7 (8512) 66-62-40 — приемная</p>
+                                <p>+7 (8512) 66-62-42 — читальный зал</p>
+                                <p>+7 (8512) 66-62-41 — факс</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">✉</div>
+                            <div class="contact-details">
+                                <h3>E-mail</h3>
+                                <p>archive@astrobl.ru — общие вопросы</p>
+                                <p>reading@astrobl.ru — читальный зал</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-details">
+                                <h3>Режим работы</h3>
+                                <p>Пн-Пт: 8:00 - 17:00</p>
+                                <p>Перерыв: 12:00 - 12:45</p>
+                                <p>Сб, Вс: выходные дни</p>
+                                <p>Читальный зал: Пн-Чт 9:00-17:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">🚌</div>
+                            <div class="contact-details">
+                                <h3>Как добраться</h3>
+                                <p>Остановка «Площадь Ленина»:<br>автобусы № 1, 5, 10, 25, троллейбус № 2</p>
+                                <p>Остановка «Улица Академика Королёва»:<br>маршрутное такси № 15, 22</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <div class="map-placeholder">
+                            <p>📍 ул. Академика Королёва, 39А, Астрахань</p>
+                            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/37/astrahan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Астрахань</a><a href="https://yandex.ru/maps/37/astrahan/house/ulitsa_akademika_korolyova_39a/YEEYdgJjSk0FQFpsfX90eXpqbA==/?ll=48.053212%2C46.358702&utm_medium=mapframe&utm_source=maps&z=19.15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Академика Королёва, 39А — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.053212%2C46.358702&mode=whatshere&whatshere%5Bpoint%5D=48.053203%2C46.358705&whatshere%5Bzoom%5D=17&z=19.15" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-form">
+                    <h3>Обратная связь</h3>
+                    <form id="feedbackForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Тема">
+                        <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="logo.svg" alt="Логотип" class="footer-logo">
+                <p>ГКУ АО "Государственный архив<br>Астраханской области"</p>
+                <p>Храним историю с 1918 года</p>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <p>📍 414000, г. Астрахань,<br>ул. Академика Королёва, 39А</p>
+                <p>📞 +7 (8512) 44-28-60</p>
+                <p>✉ archive@astrobl.ru</p>
+            </div>
+            <div class="footer-column">
+                <h4>Режим работы</h4>
+                <p>Пн-Пт: 8:30 - 17:30</p>
+                <p>Перерыв: 12:30 - 13:00</p>
+                <p>Сб, Вс: выходные</p>
+            </div>
+            <div class="footer-column">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#" data-page="home">Главная</a></li>
+                    <li><a href="#" data-page="about">Об архиве</a></li>
+                    <li><a href="#" data-page="services">Услуги</a></li>
+                    <li><a href="#" data-page="contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 — Государственный архив Астраханской области. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

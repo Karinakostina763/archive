@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #71abcf 0%, #61cfca 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Header styles */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+height: 100px;  /* Высота логотипа */
+width: auto;
+border-radius: 5px;  /* Скругление углов */
+object-fit: cover;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo-bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact-info-header {
+    text-align: right;
+}
+
+.contact-info-header p {
+    margin: 5px 0;
+}
+
+/* Navigation */
+nav {
+    background: #4fa3db;
+    position: relative;
+}
+
+.nav-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.nav-menu li a:hover {
+    background: #26607a;
+    color: #1a5276;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Main content */
+main {
+    min-height: 60vh;
+}
+
+.page {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero Section */
+.hero {
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/church-header.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 500px;  /* Увеличил высоту */
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #8bc0d8;
+    color: #1a5276;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #8edadd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-service {
+    background: #1a5276;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-service:hover {
+    background: #0e3d5c;
+}
+
+/* Directions Section */
+.directions {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.directions h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a5276;
+    font-size: 2rem;
+}
+
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.direction-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.direction-card:hover {
+    transform: translateY(-5px);
+}
+
+.direction-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.direction-card h3 {
+    margin-bottom: 15px;
+    color: #1a5276;
+}
+
+/* Stats Section */
+.stats {
+    background: #1a5276;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Page Header */
+.page-header {
+    background: #8ee4e7;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-header h2 {
+    color: #1a5276;
+    font-size: 2rem;
+}
+
+/* Content Container */
+.content-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* About Section */
+.about-section h3 {
+    color: #1a5276;
+    margin: 25px 0 15px 0;
+    font-size: 1.5rem;
+}
+
+.about-section p, .about-section ul {
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    padding-left: 30px;
+}
+
+.leadership {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #1a5276;
+    margin-bottom: 10px;
+}
+
+/* Service Request Form */
+.service-request {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.service-request h3 {
+    margin-bottom: 20px;
+    color: #1a5276;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.request-form input, .request-form select, .request-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.doc-categories {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.category {
+    background: #e0e0e0;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover, .category.active {
+    background: #1a5276;
+    color: white;
+}
+
+.documents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.doc-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.doc-item h4 {
+    color: #1a5276;
+    margin-bottom: 5px;
+}
+
+/* Funds Table */
+.funds-info {
+    background: #e8f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.funds-table-container {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.funds-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.funds-table th, .funds-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.funds-table th {
+    background: #1a5276;
+    color: white;
+}
+
+.funds-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.funds-search {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.funds-search input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Researcher Info */
+.researcher-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    color: #1a5276;
+    margin-bottom: 15px;
+}
+
+.info-card ul {
+    padding-left: 20px;
+}
+
+/* News Grid */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-3px);
+}
+
+.news-date {
+    color: #f4d03f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-card h3 {
+    color: #1a5276;
+    margin-bottom: 15px;
+}
+
+.news-link {
+    color: #1a5276;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Contacts Wrapper */
+.contacts-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-card {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-icon {
+    font-size: 2rem;
+}
+
+.contact-details h3 {
+    color: #1a5276;
+    margin-bottom: 10px;
+}
+
+.contact-details .note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 5px;
+}
+
+.contact-map {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.map-placeholder {
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, #ddd, #eee);
+    display: flex;
+    flex-direction: column;
+}
+
+.map-placeholder p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Feedback Form */
+.feedback-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.feedback-form h3 {
+    margin-bottom: 20px;
+    color: #1a5276;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-form input, .feedback-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close:hover {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #0e3d5c;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    color: #f4d03f;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #f4d03f;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-area {
+        flex-direction: column;
+    }
+    
+    .contact-info-header {
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li a {
+        padding: 12px 20px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contacts-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+}
+/* Декоративное изображение церкви в шапке */
+.header-church {
+position: absolute;
+top: 0;
+right: 0;
+width: 300px;
+height: 150px;
+background: url('images/church-header.jpg') center/cover;
+opacity: 0.3;
+border-bottom-left-radius: 20px;
+}
+
+header {
+position: relative;  /* Добавьте это свойство к существующему header */
+overflow: hidden;  /* Добавьте это свойство */
+}
